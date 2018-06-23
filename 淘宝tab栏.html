@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝tab栏</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li {
+            list-style: none;
+        }
+        .box {
+            width: 500px;
+            height: 400px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+        .box ul {
+            width: 550px;
+            margin-left: -1px; /*让公告左边框搭到box的左边框上*/
+        }
+        .box li {
+            float: left;
+            height: 40px;
+            margin-right: 1px;
+        }
+        .box a {
+            display: block;
+            /*width: 98px;*/  /*让文字不抖动*/
+            height: 40px;
+            /*padding: 1px;*/ /*让文字不抖动*/
+            font: 400 18px/40px SimSun;
+            text-align: center;
+            text-decoration: none;
+            width: 100px;
+        }
+        li a:hover {
+            font-weight: 700;
+            border-left: 1px solid #ff4400;
+            border-right: 1px solid #ff4400;
+            /*padding: 0;*/   /*让文字不抖动*/
+            color: #ff4400;
+            text-decoration: none;
+            width: 98px;  /*让文字不抖动 平衡多出来的边框2px*/
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li><a href="#">公告</a></li>
+        <li><a href="#">规则</a></li>
+        <li><a href="#">论坛</a></li>
+        <li><a href="#">公益</a></li>
+        <li><a href="#">安全</a></li>
+    </ul>
+</div>
+</body>
+</html>
